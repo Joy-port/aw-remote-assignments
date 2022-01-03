@@ -1,9 +1,6 @@
 # Appworks precourse assignments
 
-## about course
-
-
 ## assignment links and data
 | week | Repo | Demo | Notes | 
 | --- |  --- |  --- |  --- | 
-| 1-1 | [week1]() | | |
+| week1-1 | [RWD repo](https://github.com/Joy-port/remote-assignments/tree/master/week1) | [RWD demo](https://joy-port.github.io/remote-assignments/week1) | 1/3 |
