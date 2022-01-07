@@ -1,0 +1,42 @@
+.w-1{
+    width: 64px;
+}
+.square-1{
+    width: 64px;
+    height: 64px;
+}
+.square-2{
+    width: 100px;
+    height: 100px;
+}
+.square-3{
+    width: 128px;
+    height: 128px;
+}
+
+
+.img-object{
+    object-fit: contain;
+    object-position: center;
+}
+.img-overflow-1{
+    height: 160px;
+    width: 160px;
+
+    right: 8px;
+    top: 20%;
+    transform: translateY(-50%);
+}
+
+.btn-hover{
+    padding: 0.5rem 1rem;
+    border-radius: 12px;
+    &:hover{
+        background-color: #e8f0fe;
+    }
+}
+.link-hover-primary{
+    &:hover{
+        color: $primary;
+    }
+}
