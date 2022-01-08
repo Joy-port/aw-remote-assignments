@@ -7,7 +7,7 @@
 
 // scss-docs-start gray-color-variables
 $white:    #fff !default;
-$gray-100: #f8f9fa !default;
+$gray-100: rgb(241, 243, 244) !default; //#f8f9fa
 $gray-200: #e9ecef !default;
 $gray-300: #dee2e6 !default;
 $gray-400: #ced4da !default;
@@ -86,7 +86,7 @@ $theme-colors: (
   "warning":    $warning,
   "danger":     $danger,
   "light":      $light,
-  "dark":       $dark
+  "dark":       #202124
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -375,11 +375,20 @@ $gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0)) !default;
 $spacer: 1rem !default;
 $spacers: (
   0: 0,
-  1: $spacer * .25,
-  2: $spacer * .5,
-  3: $spacer,
-  4: $spacer * 1.5,
-  5: $spacer * 3,
+  1: $spacer / 4,  //4
+  2: $spacer / 2,  //8
+  3: $spacer * .625, //12 
+  4: $spacer ,        //16
+  5: $spacer * 1.125,  // 18
+  6: $spacer * 1.25,  // 20
+  7: $spacer * 1.5, //24 
+  8: $spacer * 1.75, // 28
+  9: $spacer * 1.875, // 30
+  10: $spacer * 2,   // 32
+  11: $spacer * 2.25,  //36
+  12: $spacer * 2.5, // 40 
+	13: $spacer * 3, // 48 
+  14: $spacer * 3.75, //60
 ) !default;
 
 $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) !default;
@@ -467,7 +476,7 @@ $paragraph-margin-bottom:   1rem !default;
 $grid-breakpoints: (
   xs: 0,
   sm: 600px, //576px
-  md: 768px,
+  md: 840px,
   lg: 992px,
   xl: 1200px,
   xxl: 1400px
@@ -484,8 +493,8 @@ $grid-breakpoints: (
 
 // scss-docs-start container-max-widths
 $container-max-widths: (
-  sm: 540px,
-  md: 720px,
+  sm: 600px, //540px
+  md: 792px,
   lg: 960px,
   xl: 1140px,
   xxl: 1320px
@@ -507,7 +516,7 @@ $gutters: $spacers !default;
 
 // Container padding
 
-$container-padding-x: $grid-gutter-width * .5 !default;
+$container-padding-x: $grid-gutter-width * .5  !default;
 
 
 // Components
@@ -605,6 +614,7 @@ $h3-font-size:                $font-size-base * 1.75 !default;
 $h4-font-size:                $font-size-base * 1.5 !default;
 $h5-font-size:                $font-size-base * 1.25 !default;
 $h6-font-size:                $font-size-base !default;
+$h7-font-size:                $font-size-base * .875 !default;
 // scss-docs-end font-variables
 
 // scss-docs-start font-sizes
@@ -614,7 +624,8 @@ $font-sizes: (
   3: $h3-font-size,
   4: $h4-font-size,
   5: $h5-font-size,
-  6: $h6-font-size
+  6: $h6-font-size,
+  7: $h7-font-size,
 ) !default;
 // scss-docs-end font-sizes
 
@@ -742,7 +753,7 @@ $table-variants: (
 
 // scss-docs-start input-btn-variables
 $input-btn-padding-y:         .375rem !default;
-$input-btn-padding-x:         .75rem !default;
+$input-btn-padding-x:         1.5rem !default;
 $input-btn-font-family:       null !default;
 $input-btn-font-size:         $font-size-base !default;
 $input-btn-line-height:       $line-height-base !default;

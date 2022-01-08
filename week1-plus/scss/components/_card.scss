@@ -14,7 +14,6 @@
     height: 128px;
 }
 
-
 .img-object{
     object-fit: contain;
     object-position: center;
@@ -28,6 +27,7 @@
     transform: translateY(-50%);
 }
 
+
 .btn-hover{
     padding: 0.5rem 1rem;
     border-radius: 12px;
@@ -38,5 +38,55 @@
 .link-hover-primary{
     &:hover{
         color: $primary;
+    }
+}
+
+.btn-circle{
+    display: block;
+    border: 1px solid #000;
+    border-radius: 50%;
+    background-color: #fff;
+    &>span{
+        position: relative;
+        &::after{
+            position: absolute;
+            content: 'more_vert';
+            width: 32px;
+            height: 32px;
+            font-size: 2rem;
+            top: 50%;
+            right: 50%;
+            transform: translate(-50%,-50%);
+        }
+    }
+}
+
+.fs-title{
+    font-size: 24px;
+    @include tablet{
+        font-size: 44px;
+    }
+}
+
+.container{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    @include tablet{
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}
+.h-180{
+    height: 180px;
+}
+.btn-outline-primary{
+    border-color: rgba($black, .125);
+}
+.card-body{
+    padding: 1.25rem;
+}
+.link-dark{
+    &:hover{
+        color:$primary;
     }
 }

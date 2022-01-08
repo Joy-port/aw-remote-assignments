@@ -29,4 +29,15 @@ img {
 }
 a {
   text-decoration: none;
+  font-size: 0.875rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+html, body, div, span, ul, ol, h1, h2, h3, h4, h5, h6, p{
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+hr{
+  margin: 0;
 }

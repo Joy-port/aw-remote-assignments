@@ -8,222 +8,344 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"  rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"  rel="stylesheet">
+
     <link rel="stylesheet" href="scss/all.css">
 </head>
 <body>
-    <nav>NavBar</nav>
-
-    <header class="container">
-        <div class="row align-items-center">
-            <div class="col-md-6">
-                <img src="https://developers.google.com/site-assets/images/home/learn_hero_1440.jpg" alt="learn img" class="img-fluid mb-4 mb-md-0">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <button class="navbar-toggler border-0 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <h1 class="mb-0"><a href="#" class="d-block mb-2"><img src="https://www.gstatic.com/devrel-devsite/prod/v58f8eddac3b6550de59aef35db6a54dd8d6b9bfd5277859b01b659996a6dcf43/developers/images/lockup-developers.svg" alt="img" style="width: 185px; height: 32px;"></a></h1>
+          <div class="d-flex">
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
             </div>
-            <div class="col-md-6 order-md-first">
-                <h3 class="mb-4"><a href="#" class="">Learn to build anything with Google</a></h3>
-                <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, veniam.</p>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+    <header class="container py-4">
+        <div class="row align-items-center">
+            <div class="col-sm-6">
+                <img src="https://developers.google.com/site-assets/images/home/learn_hero_1440.jpg" alt="learn img" class="img-fluid mb-4 mb-sm-0">
+            </div>
+            <div class="col-sm-6 order-sm-first">
+                <h3 class="fw-normal mb-10"><a href="#" class="">Learn to build anything with Google</a></h3>
+                <p class="mb-10">
+                    Join the one-stop destination for self-guided coding exercises, quizzes, technical articles, and video tutorials. Gain the software skills you need to develop with Google’s technology.</p>
                 <a href="#" class="btn btn-primary">start learning</a>
             </div>
         </div>
-        <hr>
     </header>
-
+    <hr>
+    
     <main>
-        <section class="container text-center mb-5">
-            <h3 class="mb-4">Build <strong>anything</strong> with Google</h3>
-                <ul class="row align-items-center">
-                    <li class="col-md-3 mb-4">
-                        <img src="https://developer.android.com/images/brand/Android_Robot_480.png" alt="app img" class="img-fluid w-1 img-object mb-2">
-                        <p>Android</p>
-                    </li>
-                    <li class="col-md-3 mb-4">
+        <section class="container text-center py-12">
+            <h3 class="fs-title mb-10">Build <strong>anything</strong> with Google</h3>
+            <ul class="row align-items-center">
+                <li class="col-6 col-sm-3 mb-4">
+                    <div class="py-4"><img src="https://developer.android.com/images/brand/Android_Robot_480.png" alt="app img" class="img-fluid w-1 img-object mb-2"></div>
+                    <p>Android</p>
+                </li>
+                <li class="col-6 col-sm-3 mb-4">
+                    <div class="py-4">
                         <img src="https://www.gstatic.com/images/branding/product/2x/google_cloud_64dp.png" alt="app img" class="img-fluid square-1 mb-2">
-                        <p>Google Cloud</p>
-                    </li>
-                    <li class="col-md-3 mb-4">
+                    </div>
+                    <p>Google Cloud</p>
+                </li>
+                <li class="col-6 col-sm-3 mb-4">
+                    <div class="py-4">
                         <img src="https://www.gstatic.com/images/branding/product/2x/firebase_64dp.png" alt="app img" class="img-fluid square-1 mb-2">
-                        <p>Firebase</p>
-                    </li>
-                    <li class="col-md-3 mb-4">
+                    </div>
+                    <p>Firebase</p>
+                </li>
+                <li class="col-6 col-sm-3 mb-4">
+                    <div class="py-4">
                         <img src="https://www.gstatic.com/images/branding/product/2x/flutter_64dp.png" alt="app img" class="img-fluid square-1 mb-2">
-                        <p>Flutter</p>
-                    </li>
-                    <li class="col-md-3 mb-4">
+                    </div>
+                    <p>Flutter</p>
+                </li>
+                <li class="col-6 col-sm-3 mb-4">
+                    <div class="py-4">
                         <img src="https://www.gstatic.com/images/branding/product/2x/assistant_64dp.png" alt="app img" class="img-fluid square-1 mb-2">
-                        <p>Google Assistant</p>
-                    </li>
-                    <li class="col-md-3 mb-4">
+                    </div>
+                    <p>Google Assistant</p>
+                </li>
+                <li class="col-6 col-sm-3 mb-4">
+                    <div class="py-4">
                         <img src="https://www.gstatic.com/images/branding/product/2x/maps_64dp.png" alt="app img" class="img-fluid square-1 mb-2">
-                        <p>Maps Platform</p>
-                    </li>
-                    <li class="col-md-3 mb-4">
+                    </div>
+                    <p>Maps Platform</p>
+                </li>
+                <li class="col-6 col-sm-3 mb-4">
+                    <div class="py-4">
                         <img src="https://developers.google.com/site-assets/images/products/tensorflow-logo-196_480.png" alt="app img" class="img-fluid square-1 mb-2">
-                        <p>TensorFlow</p>
-                    </li>
-                    <li class="col-md-3 mb-4">
+                    </div>
+                    <p>TensorFlow</p>
+                </li>
+                <li class="col-6 col-sm-3 mb-4">
+                    <div class="py-4">
                         <img src="https://developers.google.com/web/images/web-fundamentals-icon192x192_480.png" alt="app img" class="img-fluid square-1 mb-2">
-                        <p>Web</p>
-                    </li>
-                    <li class="col-md-3 mb-4">
+                    </div>
+                    <p>Web</p>
+                </li>
+                <li class="col-6 col-sm-3 mb-4">
+                    <div class="py-4">
                         <img src="https://developers.google.com/ads/images/ads_192px_clr.svg" alt="app img" class="img-fluid square-1 mb-2">
-                        <p>Google Ads</p>
-                    </li>
-                    <li class="col-md-3 mb-4">
+                    </div>
+                    <p>Google Ads</p>
+                </li>
+                <li class="col-6 col-sm-3 mb-4">
+                    <div class="py-4">
                         <img src="https://developers.google.com/homepage-assets/images/chromeos-logo_480.png" alt="app img" class="img-fluid square-1 mb-2">
-                        <p>Chrome OS</p>
-                    </li>
-                    <li class="col-md-3 mb-4">
+                    </div>
+                    <p>Chrome OS</p>
+                </li>
+                <li class="col-6 col-sm-3 mb-4">
+                    <div class="py-4">
                         <img src="https://www.gstatic.com/images/branding/product/2x/play_prism_64dp.png" alt="app img" class="img-fluid square-1 mb-2">
-                        <p>Google Play</p>
-                    </li>
-                    <li class="col-md-3 mb-4">
+                    </div>
+                    <p>Google Play</p>
+                </li>
+                <li class="col-6 col-sm-3 mb-4">
+                    <div class="py-4">
                         <img src="https://www.gstatic.com/images/branding/product/2x/youtube_64dp.png" alt="app img" class="img-fluid square-1 mb-2">
-                        <p>YouTube</p>
-                    </li>
-                </ul>
-                <a href="#" class="btn btn-primary">View all developer products</a>
+                    </div>
+                    <p>YouTube</p>
+                </li>
+            </ul>
+        </section>
+        <section class="container text-center py-12">
+            <a href="#" class="btn btn-primary">View all developer products</a>
         </section>
 
-        <section class="container">
+        <section class="container py-12">
             <ul class="row justify-content-between">
-                <li class="col-md-6 mb-3 mb-md-0">
-                    <div class="card">
+                <li class="col-sm-6 mb-3 mb-sm-0">
+                    <div class="card h-100">
                         <img src="https://developers.google.com/site-assets/images/home/card-header-grid_1440.png" alt="img bg" class="card-img-top">
                         <img src="https://developers.google.com/site-assets/images/home/events-graphic.png" alt="img" class="position-absolute img-overflow-1">
-                        <div class="card-body">
-                            <h3 class="card-title"><a href="" class="link-pirmary">Events</a></h3>
-                            <p>Bringing developers together in-person and online. Stay in the know about upcoming events, catch up on content you missed, and connect with Google experts.</p>
-                            <a href="#" class="btn btn-outline-primary border-gray-700">See Events</a>
+                        <div class="card-body h-100 d-flex flex-column">
+                            <h3 class="card-title mb-7"><a href="https://developers.google.com/events" class="link-pirmary">Events</a></h3>
+                            <p class="mb-4">Bringing developers together in-person and online. Stay in the know about upcoming events, catch up on content you missed, and connect with Google experts.</p>
+                            <a href="#" class="btn btn-outline-primary border-gray-700 mt-auto me-auto">See Events</a>
                         </div>
                     </div>
                 </li>
-                <li class="col-md-6">
-                    <div class="card">
+                <li class="col-sm-6">
+                    <div class="card h-100">
                         <img src="https://developers.google.com/site-assets/images/home/card-header-grid_1440.png" alt="img bg" class="card-img-top">
                         <img src="https://developers.google.com/site-assets/images/home/community-graphic.png" alt="img" class="position-absolute img-overflow-1">
-                        <div class="card-body">
-                            <h3 class="card-title"><a href="" class="link-pirmary">Community</a></h3>
-                            <p>Connect with fellow developers and startups in your area, hear from industry experts, share your skills, and learn new ones.</p>
-                            <a href="#" class="btn btn-outline-primary border-gray-700">See Events</a>
+                        <div class="card-body h-100 d-flex flex-column">
+                            <h3 class="card-title mb-7"><a href="https://developers.google.com/community" class="link-pirmary">Community</a></h3>
+                            <p class="mb-4">Connect with fellow developers and startups in your area, hear from industry experts, share your skills, and learn new ones.</p>
+                            <a href="#" class="btn btn-outline-primary border-gray-700 mt-auto me-auto">See Events</a>
                         </div>
                     </div>
                 </li>
             </ul>
         </section>
 
-        <section class="bg-light">
+        <section class="bg-light py-12">
             <div class="container">
-            <h2 class="text-center mb-4">News</h2>
+            <h2 class="text-center mb-10">News</h2>
             <ul class="row">
-                <li class="col-md-6 mb-3">
-                    <div class="card card-body">
-                        <img src="https://developers.google.com/site-assets/images/news/odml_logo_480.png" alt="news img" class="square-3 img-object m-auto">
-                        <h3 class=""><a href="#">Build with On-Device ML</a></h3>
-                        <p class="mb-2">Address common challenges in your apps with on-device machine learning. Explore Google's solutions and tools like turn-key APIs, real-world examples from developers, and more.</p>
-                        <a href="#" class="mb-2">Learn more</a>
+                <li class="col-sm-6 mb-7">
+                    <div class="card h-100">
+                        <a href="https://developers.google.com/learn/topics/on-device-ml" class="d-flex justify-content-center align-items-center h-180">
+                            <img src="https://developers.google.com/site-assets/images/news/odml_logo_480.png" alt="news img" class="square-3 img-object d-block mx-auto py-4">
+                        </a>
+                        <div class="d-flex flex-column card-body justify-content-between h-100">
+                            <h3 class="mb-7"><a href="https://developers.google.com/learn/topics/on-device-ml">Build with On-Device ML</a></h3>
+                            <p class="mb-4">Address common challenges in your apps with on-device machine learning. Explore Google's solutions and tools like turn-key APIs, real-world examples from developers, and more.</p>
+                            <a href="#">Learn more</a>
+                        </div>
                     </div>
                 </li>
-                <li class="col-md-6 mb-3">
-                    <div class="card card-body">
-                        <img src="https://developers.google.com/site-assets/images/news/odml_logo_480.png" alt="news img" class="square-3 img-object m-auto">
-                        <h3 class=""><a href="#">Build with On-Device ML</a></h3>
-                        <p class="mb-2">Address common challenges in your apps with on-device machine learning. Explore Google's solutions and tools like turn-key APIs, real-world examples from developers, and more.</p>
-                        <a href="#" class="mb-2">Learn more</a>
+                <li class="col-sm-6 mb-7">
+                    <div class="card h-100">
+                            <a href="https://android-developers.googleblog.com/2021/12/beta-1-update-for-12l-feature-drop.html" class="d-block"><img src="https://developer.android.com/images/brand/Android_Robot_480.png" alt="news img" class="square-3 img-object d-block mx-auto py-4"></a>
+                        <div class="d-flex card-body  flex-column justify-content-between h-100">
+                            <h3 class="mb-7"><a href="https://android-developers.googleblog.com/2021/12/beta-1-update-for-12l-feature-drop.html">Beta 1 update for 12L feature drop</a></h3>
+                            <p class="mb-4">12L streamlines the UI for large screens. Read more about what's in the release and get your apps ready for testing and feedback.</p>
+                            <a href="#">Learn more</a>
+                        </div>
                     </div>
                 </li>
-                <li class="col-md-6 mb-3">
-                    <div class="card card-body">
-                        <img src="https://developers.google.com/site-assets/images/news/odml_logo_480.png" alt="news img" class="square-3 img-object m-auto">
-                        <h3 class=""><a href="#">Build with On-Device ML</a></h3>
-                        <p class="mb-2">Address common challenges in your apps with on-device machine learning. Explore Google's solutions and tools like turn-key APIs, real-world examples from developers, and more.</p>
-                        <a href="#" class="mb-2">Learn more</a>
+                <li class="col-sm-6 mb-7">
+                    <div class="card h-100">
+                        <a href="https://medium.com/flutter/announcing-flutter-2-8-31d2cb7e19f5" class="d-block">
+                            <img src="https://www.gstatic.com/images/branding/product/2x/flutter_96dp.png" alt="news img" class="square-3 img-object d-block mx-auto py-4">
+                        </a>
+                        <div class="d-flex card-body  flex-column justify-content-between h-100">
+                            <h3 class="mb-7"><a href="https://medium.com/flutter/announcing-flutter-2-8-31d2cb7e19f5">Flutter 2.8 is here</a></h3>
+                            <p class="mb-4">This version focuses on mobile performance, productivity, updates that make it easy to connect apps to back-end services like Firebase and Google Cloud, and production-quality support for Google Ads. Includes Dart 2.15 improvements.</p>
+                            <a href="#">Learn more</a>
+                        </div>
                     </div>
                 </li>
-                <li class="col-md-6 mb-3">
-                    <div class="card card-body">
-                        <img src="https://developers.google.com/site-assets/images/news/odml_logo_480.png" alt="news img" class="square-3 img-object m-auto">
-                        <h3 class=""><a href="#">Build with On-Device ML</a></h3>
-                        <p class="mb-2">Address common challenges in your apps with on-device machine learning. Explore Google's solutions and tools like turn-key APIs, real-world examples from developers, and more.</p>
-                        <a href="#" class="mb-2">Learn more</a>
+                <li class="col-sm-6 mb-7">
+                    <div class="card h-100">
+                            <a href="https://blog.golang.org/go1.17" class="d-block">
+                                <img src="https://developers.google.com/site-assets/platform-go-color.svg" alt="news img" class="square-3 img-object d-block mx-auto py-4">
+                            </a>
+                        <div class="d-flex card-body  flex-column justify-content-between h-100">
+                            <h3 class="mb-7"><a href="https://blog.golang.org/go1.17">Go 1.17 speeds up development</a></h3>
+                            <p class="mb-4">Go 1.17 is now available, and it brings performance enhancements, improvements to modules, support for 64-bit architecture on Windows, and many other changes. Get started by reading the release post.</p>
+                            <a href="#">Learn more</a>
+                    </div>
                     </div>
                 </li>
-                <li class="col-md-6 mb-3">
-                    <div class="card card-body">
-                        <img src="https://developers.google.com/site-assets/images/news/odml_logo_480.png" alt="news img" class="square-3 img-object m-auto">
-                        <h3 class=""><a href="#">Build with On-Device ML</a></h3>
-                        <p class="mb-2">Address common challenges in your apps with on-device machine learning. Explore Google's solutions and tools like turn-key APIs, real-world examples from developers, and more.</p>
-                        <a href="#" class="mb-2">Learn more</a>
+                <li class="col-sm-6 mb-7">
+                    <div class="card h-100">
+                            <a href="https://support.google.com/googleplay/android-developer/answer/10787469" class="d-block">
+                                <img src="https://developers.google.com/site-assets/images/news/play_logo_480.png" alt="news img" class="square-3 img-object d-block mx-auto py-4">
+                            </a>
+                        <div class="d-flex card-body  flex-column justify-content-between h-100">
+                            <h3 class="mb-7"><a href="https://support.google.com/googleplay/android-developer/answer/10787469">Submit your Data safety form by February</a></h3>
+                            <p class="mb-4">Fill out and submit your Data safety form in your Google Play Console to get early feedback. In February, the Data safety section will launch in the Google Play Store and help you explain to users how your apps collect, share, and protect user data. Deadline is April 1.</p>
+                            <a href="#">Learn more</a>
+                    </div>
                     </div>
                 </li>
-                <li class="col-md-6 mb-3">
-                    <div class="card card-body">
-                        <img src="https://developers.google.com/site-assets/images/news/odml_logo_480.png" alt="news img" class="square-3 img-object m-auto">
-                        <h3 class=""><a href="#">Build with On-Device ML</a></h3>
-                        <p class="mb-2">Address common challenges in your apps with on-device machine learning. Explore Google's solutions and tools like turn-key APIs, real-world examples from developers, and more.</p>
-                        <a href="#" class="mb-2">Learn more</a>
+                <li class="col-sm-6 mb-7">
+                    <div class="card h-100">
+                            <a href="https://www.tensorflow.org/ml-community-day" class="d-block">
+                                <img src="https://developers.google.com/site-assets/images/products/ml-community-day_480.png" alt="news img" class="square-3 img-object d-block mx-auto py-4">
+                            </a>
+                        <div class="d-flex card-body  flex-column justify-content-between h-100">
+                            <h3 class="mb-7"><a href="https://www.tensorflow.org/ml-community-day">The latest with machine learning</a></h3>
+                            <p class="mb-4">Explore new announcements on Google’s machine learning products, including TensorFlow, JAX, and more. Learn about the tools that push state-of-the-art research and how you can use them in your ML applications.</p>
+                            <a href="#">Learn more</a>
+                        </div>
                     </div>
                 </li>
-                <li class="col-md-6 mb-3">
-                    <div class="card card-body">
-                        <img src="https://developers.google.com/site-assets/images/news/odml_logo_480.png" alt="news img" class="square-3 img-object m-auto">
-                        <h3 class=""><a href="#">Build with On-Device ML</a></h3>
-                        <p class="mb-2">Address common challenges in your apps with on-device machine learning. Explore Google's solutions and tools like turn-key APIs, real-world examples from developers, and more.</p>
-                        <a href="#" class="mb-2">Learn more</a>
+                <li class="col-sm-6">
+                    <div class="card h-100">
+                            <a href="https://devlibrary.withgoogle.com/" class="d-block">
+                                <img src="https://developers.google.com/site-assets/images/news/google_dev_library.svg" alt="news img" class="square-3 img-object d-block mx-auto py-4">
+                            </a>
+                        <div class="d-flex card-body  flex-column justify-content-between h-100">
+                            <h3 class="mb-7"><a href="https://devlibrary.withgoogle.com/">Join the Google Dev Library platform</a></h3>
+                            <p class="mb-4">Get started with Google Dev Library to find inspiration on how to use Google technologies. Search for open source projects, learn from other developers, and submit your latest projects so that others can learn from you.
+                            </p>
+                            <a href="#">Learn more</a>
+                        </div>
                     </div>
                 </li>
-                <li class="col-md-6 mb-3">
-                    <div class="card card-body">
-                        <img src="https://developers.google.com/site-assets/images/news/odml_logo_480.png" alt="news img" class="square-3 img-object m-auto">
-                        <h3 class=""><a href="#">Build with On-Device ML</a></h3>
-                        <p class="mb-2">Address common challenges in your apps with on-device machine learning. Explore Google's solutions and tools like turn-key APIs, real-world examples from developers, and more.</p>
-                        <a href="#" class="mb-2">Learn more</a>
-                    </div>
-                </li>
-                <li class="col-md-6 mb-3">
-                    <div class="card card-body">
-                        <img src="https://developers.google.com/site-assets/images/news/odml_logo_480.png" alt="news img" class="square-3 img-object m-auto">
-                        <h3 class=""><a href="#">Build with On-Device ML</a></h3>
-                        <p class="mb-2">Address common challenges in your apps with on-device machine learning. Explore Google's solutions and tools like turn-key APIs, real-world examples from developers, and more.</p>
-                        <a href="#" class="mb-2">Learn more</a>
+                <li class="col-sm-6">
+                    <div class="card h-100">
+                            <a href="https://codingcompetitions.withgoogle.com/hashcode/hubs" class="d-block">
+                                <img src="https://developers.google.com/site-assets/images/news/hashcode_480.png" alt="news img" class="square-3 img-object d-block mx-auto py-4">
+                            </a>
+                        <div class="d-flex card-body  flex-column justify-content-between h-100">
+                            <h3 class="mb-7"><a href="https://codingcompetitions.withgoogle.com/hashcode/hubs">Apply to host a Hash Code Hub</a></h3>
+                            <p class="mb-4">Join Hash Code, Google's team programming competition for students and professionals. Bring your community or organization together to solve a real engineering problem. Deadline is February 17.</p>
+                            <a href="#">Learn more</a>
+                        </div>
                     </div>
                 </li>
             </ul>
             </div>
         </section>
 
-        <section class="container mb-3">
+        <section class="container my-4 my-md-12">
             <div class="text-center">
-                <h2 class="mb-3">Find a Google developer expert</h2>
-                <p class="mb-3">Browse our directory of developer experts who have been recognized by Google for their depth of tech knowledge and skills.
+                <h2 class="mb-4">Find a Google developer expert</h2>
+                <p class="mb-4">Browse our directory of developer experts who have been recognized by Google for their depth of tech knowledge and skills.
                 </p>
-                <a href="#" class="btn btn-outline-primary border-light mb-3">View all developer experts</a>
+                <a href="#" class="btn btn-outline-primary mb-3">View all developer experts</a>
             </div>
+        </section>
+        <section class="container my-6 my-md-12">
             <ul class="row">
-                <li class="col-md-6 mb-3">
+                <li class="col-sm-6 mb-3">
                     <div class="text-center border border-1 rounded-3 py-3 px-5 h-100 d-flex flex-column">
                         <div class="">
-                            <img src="https://lh4.googleusercontent.com/-EIvEW4nbUts/AAAAAAAAAAI/AAAAAAAAAwM/EQkfdq1qW8Y/s172-c/photo.jpg" alt="experts img" class="square-2 border-0 rounded-circle mb-2">
-                            <h3 class="mb-2">Harshit Dwivedi</h3>
-                            <p class="mb-3">New Delhi, India</p>
+                            <img src="https://lh3.googleusercontent.com/-ckhK85zrlYM/AAAAAAAAAAI/AAAAAAAAC4g/G5DIeeyNEAM/s96-c/photo.jpg'" alt="experts img" class="square-2 border-0 rounded-circle mb-6">
+                            <h3 class="mb-3">Vincent Ogloblinsky</h3>
+                            <p class="mb-4">Rennes, France</p>
                             <p class="mb-1">
-                                Expertise:
+                                Expertise1
                             </p>
-                            <p class="text-secondary mb-4">Firebase</p>
+                            <p class="text-secondary mb-4">Web Technologies</p>
                         </div>
-                        <a href="#" class="btn-hover mt-auto">View Profile</a>
+                        <a href="#" class="btn-hover mt-auto mx-auto">View Profile</a>
                     </div>
                 </li>
-                <li class="col-md-6 mb-3">
+                <li class="col-sm-6 mb-3">
                     <div class="text-center border border-1 rounded-3 py-3 px-5 h-100 d-flex flex-column">
                         <div class="">
-                            <img src="https://lh4.googleusercontent.com/-EIvEW4nbUts/AAAAAAAAAAI/AAAAAAAAAwM/EQkfdq1qW8Y/s172-c/photo.jpg" alt="experts img" class="square-2 border-0 rounded-circle mb-2">
-                            <h3 class="mb-2">Harshit Dwivedi</h3>
-                            <p class="mb-3">New Delhi, India, aksdjl ,,asdladnlknadnasd n</p>
+                            <img src="https://sfo2.digitaloceanspaces.com/advocu/gde/profile-photos/2021/06/05/217ecc0f-4bcc-4c06-971f-62920e09c329.png" alt="experts img" class="square-2 border-0 rounded-circle mb-6">
+                            <h3 class="mb-3">Anna Domashych</h3>
+                            <p class="mb-4">Kharkiv, Kharkiv Oblast, Ukraine</p>
                             <p class="mb-1">
                                 Expertise:
                             </p>
-                            <p class="text-secondary mb-4">Firebase</p>
+                            <p class="text-secondary mb-4">Dart, Flutter</p>
                         </div>
-                        <a href="#" class="btn-hover mt-auto">View Profile</a>
+                        <a href="#" class="btn-hover mt-auto mx-auto">View Profile</a>
+                    </div>
+                </li>
+                <li class="col-sm-6 mb-3">
+                    <div class="text-center border border-1 rounded-3 py-3 px-5 h-100 d-flex flex-column">
+                        <div class="">
+                            <img src="https://sfo2.digitaloceanspaces.com/advocu/gde/profile-photos/2021/06/05/c8b4686b-74c5-4d67-8f52-6be75f737145.jpg" alt="experts img" class="square-2 border-0 rounded-circle mb-6">
+                            <h3 class="mb-3">Sourabh Choraria</h3>
+                            <p class="mb-4">Bengaluru, Karnataka, India</p>
+                            <p class="mb-1">
+                                Expertise:
+                            </p>
+                            <p class="text-secondary mb-4">Google Workspace</p>
+                        </div>
+                        <a href="#" class="btn-hover mt-auto mx-auto">View Profile</a>
+                    </div>
+                </li>
+                <li class="col-sm-6 mb-3">
+                    <div class="text-center border border-1 rounded-3 py-3 px-5 h-100 d-flex flex-column">
+                        <div class="">
+                            <img src="https://lh5.googleusercontent.com/-IjHOgqnoYZ4/AAAAAAAAAAI/AAAAAAAAacE/zcRgtB1sWws/s172-c/photo.jpg" alt="experts img" class="square-2 border-0 rounded-circle mb-6">
+                            <h3 class="mb-3">Mashhood Rastgar</h3>
+                            <p class="mb-4">Karachi, Pakistan</p>
+                            <p class="mb-1">
+                                Expertise:
+                            </p>
+                            <p class="text-secondary mb-4">Angular, Web Technologies</p>
+                        </div>
+                        <a href="#" class="btn-hover mt-auto mx-auto">View Profile</a>
                     </div>
                 </li>
             </ul>
@@ -234,62 +356,66 @@
 
     <footer>
         <div class="container">
-            <ul class="row py-3">
-                <li class="col-md-4 mb-3">
-                    <h3 class="">Connect</h3>
+            <ul class="row py-7">
+                <li class="col-sm-4 mb-3">
+                    <h3 class="fs-7">Connect</h3>
                     <ul>
-                        <li class=""><a href="#" class="link-dark link-hover-primary">Blog</a></li>
-                        <li class=""><a href="#" class="link-dark link-hover-primary">Blog</a></li>
-                        <li class=""><a href="#" class="link-dark link-hover-primary">Blog</a></li>
-                        <li class=""><a href="#" class="link-dark link-hover-primary">Blog</a></li>
-                        <li class=""><a href="#" class="link-dark link-hover-primary">Blog</a></li>
+                        <li class=""><a href="#" class="d-block link-dark link-hover-primary">Blog</a></li>
+                        <li class=""><a href="#" class="d-block link-dark link-hover-primary">Blog</a></li>
+                        <li class=""><a href="#" class="d-block link-dark link-hover-primary">Blog</a></li>
+                        <li class=""><a href="#" class="d-block link-dark link-hover-primary">Blog</a></li>
+                        <li class=""><a href="#" class="d-block link-dark link-hover-primary">Blog</a></li>
                     </ul>
                 </li>
-                <li class="col-md-4 mb-3">
-                    <h3 class="">Connect</h3>
+                <li class="col-sm-4 mb-3">
+                    <h3 class="fs-7">Connect</h3>
                     <ul>
-                        <li class=""><a href="#" class="link-dark link-hover-primary">Blog</a></li>
-                        <li class=""><a href="#" class="link-dark link-hover-primary">Blog</a></li>
-                        <li class=""><a href="#" class="link-dark link-hover-primary">Blog</a></li>
-                        <li class=""><a href="#" class="link-dark link-hover-primary">Blog</a></li>
-                        <li class=""><a href="#" class="link-dark link-hover-primary">Blog</a></li>
+                        <li class=""><a href="#" class="d-block link-dark link-hover-primary">Blog</a></li>
+                        <li class=""><a href="#" class="d-block link-dark link-hover-primary">Blog</a></li>
+                        <li class=""><a href="#" class="d-block link-dark link-hover-primary">Blog</a></li>
+                        <li class=""><a href="#" class="d-block link-dark link-hover-primary">Blog</a></li>
+                        <li class=""><a href="#" class="d-block link-dark link-hover-primary">Blog</a></li>
                     </ul>
                 </li>
-                <li class="col-md-4 mb-3">
-                    <h3 class="">Connect</h3>
+                <li class="col-sm-4 mb-3">
+                    <h3 class="fs-7">Connect</h3>
                     <ul>
-                        <li class=""><a href="#" class="link-dark link-hover-primary">Blog</a></li>
-                        <li class=""><a href="#" class="link-dark link-hover-primary">Blog</a></li>
-                        <li class=""><a href="#" class="link-dark link-hover-primary">Blog</a></li>
-                        <li class=""><a href="#" class="link-dark link-hover-primary">Blog</a></li>
-                        <li class=""><a href="#" class="link-dark link-hover-primary">Blog</a></li>
+                        <li class=""><a href="#" class="d-block link-dark link-hover-primary">Blog</a></li>
+                        <li class=""><a href="#" class="d-block link-dark link-hover-primary">Blog</a></li>
+                        <li class=""><a href="#" class="d-block link-dark link-hover-primary">Blog</a></li>
+                        <li class=""><a href="#" class="d-block link-dark link-hover-primary">Blog</a></li>
+                        <li class=""><a href="#" class="d-block link-dark link-hover-primary">Blog</a></li>
                     </ul>
                 </li>
             </ul>
             <hr>
-            <div class="py-4">
-                <a href="#" class="d-block mb-2"><img src="https://www.gstatic.com/devrel-devsite/prod/v58f8eddac3b6550de59aef35db6a54dd8d6b9bfd5277859b01b659996a6dcf43/developers/images/lockup-developers.svg" alt="img" style="width: 185px; height: 32px;"></a>
-                <ul class="d-flex flex-column flex-md-row">
-                    <li><a href="#" class="btn link-dark link-hover-primary">Android</a></li>
-                    <li><a href="#" class="btn link-dark link-hover-primary">Android</a></li>
-                    <li><a href="#" class="btn link-dark link-hover-primary">Android</a></li>
-                    <li><a href="#" class="btn link-dark link-hover-primary">Android</a></li>
-                    <li><a href="#" class="btn link-dark link-hover-primary">Android</a></li>
+            <div class="py-7">
+                <div class="d-flex flex-column flex-sm-row align-items-sm-center">
+                <a href="#" class="d-block"><img src="https://www.gstatic.com/devrel-devsite/prod/v58f8eddac3b6550de59aef35db6a54dd8d6b9bfd5277859b01b659996a6dcf43/developers/images/lockup-developers.svg" alt="img" style="width: 185px; height: 32px;"></a>
+                <ul class="d-flex flex-column flex-sm-row">
+                    <li class="ms-sm-7"><a href="#" class="d-block link-dark link-hover-primary">Android</a></li>
+                    <li class="ms-sm-7"><a href="#" class="d-block link-dark link-hover-primary">Android</a></li>
+                    <li class="ms-sm-7"><a href="#" class="d-block link-dark link-hover-primary">Android</a></li>
+                    <li class="ms-sm-7"><a href="#" class="d-block link-dark link-hover-primary">Android</a></li>
+                    <li class="ms-sm-7"><a href="#" class="d-block link-dark link-hover-primary">Android</a></li>
                 </ul>
             </div>
-            <div class="py-4">
-                <div class="d-flex flex-column flex-md-row justify-content-md-between">
-                    <p class="mb-0"><a href="#" class="btn link-dark link-hover-primary">Terms</a> | <a href="#" class="btn link-dark link-hover-primary">Privacy</a></p>
-                    <div class="d-flex flex-column flex-md-row">
-                        <div class="d-flex justify-content-between align-items-center mb-3">
-                            <p class="mb-0">Sign up for the Google Developers newsletter</p>
-                            <a href="#" class="btn btn-primary">Subscribe</a>
+            </div>
+            <hr>
+            <div class="py-7">
+                <div class="d-flex flex-column flex-sm-row justify-content-sm-between align-items-sm-center">
+                    <p class="mb-0"><a href="#" class="link-dark link-hover-primary">Terms</a> | <a href="#" class="link-dark link-hover-primary">Privacy</a></p>
+                    <div class="d-flex flex-column flex-sm-row">
+                        <div class="d-flex justify-content-between align-items-center me-4">
+                            <p class="fs-7 me-4">Sign up for the Google Developers newsletter</p>
+                            <a href="#" class="btn btn-primary fs-7">Subscribe</a>
                         </div>
-                        <a href="#" class="btn btn-primary d-inline-block">Toggle</a>
+                        <a href="#" class="btn btn-primary d-inline-block fs-7">Toggle</a>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
