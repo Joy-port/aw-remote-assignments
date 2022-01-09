@@ -1,9 +1,10 @@
 @import "../node_modules/bootstrap/scss/functions";
 @import "../scss/helpers/variables";
+@import "../../../node_modules/bootstrap/scss/mixins";
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
+
 @import "../scss/helpers/base";
-@import "../scss/helpers/mixin";
+@import "../scss/helpers/utilities";
 
 @import "../scss/components/card";
-@import "../scss/components/spacer";

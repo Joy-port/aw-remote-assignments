@@ -15352,4 +15352,19 @@ hr {
 .link-dark:hover {
   color: #1a73e8;
 }
+
+.navbar-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 185px;
+  height: 44px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.navbar-logo > img {
+  width: 100%;
+  min-height: 32px;
+}
 /*# sourceMappingURL=all.css.map */
