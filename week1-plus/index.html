@@ -14,28 +14,39 @@
     <link rel="stylesheet" href="scss/all.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm">
+    <nav class="navbar navbar-expand-md">
         <div class="container-fluid px-sm-7">
             <div class="d-flex justify-content-between align-items-center w-100">
                 <div class="d-flex align-items-center">
                     <button class="navbar-toggler border-0 p-0 me-2 d-sm-none material-icons-outlined" type="button">
                         menu
                     </button>
-                    <h1 class=""><a href="#" class="navbar-logo ratio-18x4"><img src="https://www.gstatic.com/devrel-devsite/prod/v58f8eddac3b6550de59aef35db6a54dd8d6b9bfd5277859b01b659996a6dcf43/developers/images/lockup-developers.svg" alt="img"></a></h1>
+                    <h1 class=""><a href="#" class="logo ratio-18x4"><img src="https://www.gstatic.com/devrel-devsite/prod/v58f8eddac3b6550de59aef35db6a54dd8d6b9bfd5277859b01b659996a6dcf43/developers/images/lockup-developers.svg" alt="img"></a></h1>
                 </div>
                 <!-- pc list -->
                 <!-- menu list-->
-                <div class="collapse navbar-collapse  justify-content-between align-items-center d-none d-sm-block" id="navbarSupportedContent">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                        </li>
+                <div class="collapse navbar-collapse  align-items-center justify-content-between" id="navbarSupportedContent">
+                    <ul class="navbar-nav justify-content-end me-5">
                         <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown
+                            <a class="nav-link link-dark dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Products
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item d-none d-md2-block">
+                        <a class="nav-link link-dark" href="#">Events</a>
+                        </li>
+                        <li class="nav-item d-none d-lg-block">
+                        <a class="nav-link link-dark" href="#">Learn</a>
+                        </li>
+                        <li class="nav-item dropdown d-none d-lg2-block">
+                        <a class="nav-link link-dark dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Developers Communities
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="#">Action</a></li>
@@ -44,12 +55,26 @@
                             <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>
                         </li>
-                        <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        <li class="nav-item d-none d-xl-block">
+                        <a class="nav-link link-dark" href="#" tabindex="-1" aria-disabled="true">Develeoper Profile</a>
+                        </li>
+                        <li class="nav-item d-none d-xxl-block">
+                        <a class="nav-link link-dark" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item dropdown d-xxl1-none">
+                            <a class="nav-link link-dark dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                More
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
                         </li>
                     </ul>
                     <!-- search group -->
-                    <div class="position-relative search-input">
+                    <div class="position-relative w-2 ">
                         <input class="form-control px-12" type="search" placeholder="Search" aria-label="Search">
                         <button class="btn p-0 fs-4 material-icons-outlined position-absolute top-50 start-0 translate-middle-y ms-2" type="button">
                                 search
@@ -57,16 +82,18 @@
                     </div>
                 </div>
                 <!-- account list -->
-                <div class="d-flex gap-2 ms-2">
-                    <button class="material-icons-outlined btn p-0 fs-4 d-sm-none" type="button">
-                        search
+                <div class="d-flex gap-2 ms-2 align-items-center h-auto">
+                    <button class="btn fs-4 rounded-circle circle-icon p-0 px-2 d-md-none" type="button">
+                        <span class="d-block material-icons-outlined my-auto">
+                            search
+                        </span>
                     </button>
-                    <button type="button" class="d-flex btn ps-0 pe-2 border border-1">
+                    <button type="button" class="d-none d-sm-flex btn px-0 pe-2 border toggle-btn">
                         <span class="material-icons-outlined">
                             arrow_drop_down
                         </span>
-                        <p>
-                            Deutsch
+                        <p class="fs-7">
+                            English
                         </p>
                     </button>
                     <button class="btn fs-4 border rounded-circle circle-icon p-0" type="button">
@@ -184,7 +211,7 @@
                     <div class="card h-100">
                         <img src="https://developers.google.com/site-assets/images/home/card-header-grid_1440.png" alt="img bg" class="card-img-top">
                         <img src="https://developers.google.com/site-assets/images/home/events-graphic.png" alt="img" class="position-absolute img-overflow-1">
-                        <div class="card-body h-100 d-flex flex-column">
+                        <div class="p-6 h-100 d-flex flex-column">
                             <h3 class="card-title mb-7"><a href="https://developers.google.com/events" class="link-pirmary">Events</a></h3>
                             <p class="mb-4">Bringing developers together in-person and online. Stay in the know about upcoming events, catch up on content you missed, and connect with Google experts.</p>
                             <a href="#" class="btn btn-outline-primary border-gray-700 mt-auto me-auto">See Events</a>
@@ -195,7 +222,7 @@
                     <div class="card h-100">
                         <img src="https://developers.google.com/site-assets/images/home/card-header-grid_1440.png" alt="img bg" class="card-img-top">
                         <img src="https://developers.google.com/site-assets/images/home/community-graphic.png" alt="img" class="position-absolute img-overflow-1">
-                        <div class="card-body h-100 d-flex flex-column">
+                        <div class="p-6 h-100 d-flex flex-column">
                             <h3 class="card-title mb-7"><a href="https://developers.google.com/community" class="link-pirmary">Community</a></h3>
                             <p class="mb-4">Connect with fellow developers and startups in your area, hear from industry experts, share your skills, and learn new ones.</p>
                             <a href="#" class="btn btn-outline-primary border-gray-700 mt-auto me-auto">See Events</a>
@@ -211,10 +238,10 @@
             <ul class="row">
                 <li class="col-sm-6 mb-7">
                     <div class="card h-100">
-                        <a href="https://developers.google.com/learn/topics/on-device-ml" class="d-flex justify-content-center align-items-center h-180">
+                        <a href="https://developers.google.com/learn/topics/on-device-ml" class="d-flex justify-content-center align-items-center h-1">
                             <img src="https://developers.google.com/site-assets/images/news/odml_logo_480.png" alt="news img" class="square-3 img-object d-block mx-auto py-4">
                         </a>
-                        <div class="d-flex flex-column card-body justify-content-between h-100">
+                        <div class="d-flex flex-column p-6 justify-content-between h-100">
                             <h3 class="mb-7"><a href="https://developers.google.com/learn/topics/on-device-ml">Build with On-Device ML</a></h3>
                             <p class="mb-4">Address common challenges in your apps with on-device machine learning. Explore Google's solutions and tools like turn-key APIs, real-world examples from developers, and more.</p>
                             <a href="#">Learn more</a>
@@ -224,7 +251,7 @@
                 <li class="col-sm-6 mb-7">
                     <div class="card h-100">
                             <a href="https://android-developers.googleblog.com/2021/12/beta-1-update-for-12l-feature-drop.html" class="d-block"><img src="https://developer.android.com/images/brand/Android_Robot_480.png" alt="news img" class="square-3 img-object d-block mx-auto py-4"></a>
-                        <div class="d-flex card-body  flex-column justify-content-between h-100">
+                        <div class="d-flex p-6  flex-column justify-content-between h-100">
                             <h3 class="mb-7"><a href="https://android-developers.googleblog.com/2021/12/beta-1-update-for-12l-feature-drop.html">Beta 1 update for 12L feature drop</a></h3>
                             <p class="mb-4">12L streamlines the UI for large screens. Read more about what's in the release and get your apps ready for testing and feedback.</p>
                             <a href="#">Learn more</a>
@@ -236,7 +263,7 @@
                         <a href="https://medium.com/flutter/announcing-flutter-2-8-31d2cb7e19f5" class="d-block">
                             <img src="https://www.gstatic.com/images/branding/product/2x/flutter_96dp.png" alt="news img" class="square-3 img-object d-block mx-auto py-4">
                         </a>
-                        <div class="d-flex card-body  flex-column justify-content-between h-100">
+                        <div class="d-flex p-6  flex-column justify-content-between h-100">
                             <h3 class="mb-7"><a href="https://medium.com/flutter/announcing-flutter-2-8-31d2cb7e19f5">Flutter 2.8 is here</a></h3>
                             <p class="mb-4">This version focuses on mobile performance, productivity, updates that make it easy to connect apps to back-end services like Firebase and Google Cloud, and production-quality support for Google Ads. Includes Dart 2.15 improvements.</p>
                             <a href="#">Learn more</a>
@@ -248,7 +275,7 @@
                             <a href="https://blog.golang.org/go1.17" class="d-block">
                                 <img src="https://developers.google.com/site-assets/platform-go-color.svg" alt="news img" class="square-3 img-object d-block mx-auto py-4">
                             </a>
-                        <div class="d-flex card-body  flex-column justify-content-between h-100">
+                        <div class="d-flex p-6  flex-column justify-content-between h-100">
                             <h3 class="mb-7"><a href="https://blog.golang.org/go1.17">Go 1.17 speeds up development</a></h3>
                             <p class="mb-4">Go 1.17 is now available, and it brings performance enhancements, improvements to modules, support for 64-bit architecture on Windows, and many other changes. Get started by reading the release post.</p>
                             <a href="#">Learn more</a>
@@ -260,7 +287,7 @@
                             <a href="https://support.google.com/googleplay/android-developer/answer/10787469" class="d-block">
                                 <img src="https://developers.google.com/site-assets/images/news/play_logo_480.png" alt="news img" class="square-3 img-object d-block mx-auto py-4">
                             </a>
-                        <div class="d-flex card-body  flex-column justify-content-between h-100">
+                        <div class="d-flex p-6  flex-column justify-content-between h-100">
                             <h3 class="mb-7"><a href="https://support.google.com/googleplay/android-developer/answer/10787469">Submit your Data safety form by February</a></h3>
                             <p class="mb-4">Fill out and submit your Data safety form in your Google Play Console to get early feedback. In February, the Data safety section will launch in the Google Play Store and help you explain to users how your apps collect, share, and protect user data. Deadline is April 1.</p>
                             <a href="#">Learn more</a>
@@ -272,7 +299,7 @@
                             <a href="https://www.tensorflow.org/ml-community-day" class="d-block">
                                 <img src="https://developers.google.com/site-assets/images/products/ml-community-day_480.png" alt="news img" class="square-3 img-object d-block mx-auto py-4">
                             </a>
-                        <div class="d-flex card-body  flex-column justify-content-between h-100">
+                        <div class="d-flex p-6  flex-column justify-content-between h-100">
                             <h3 class="mb-7"><a href="https://www.tensorflow.org/ml-community-day">The latest with machine learning</a></h3>
                             <p class="mb-4">Explore new announcements on Google’s machine learning products, including TensorFlow, JAX, and more. Learn about the tools that push state-of-the-art research and how you can use them in your ML applications.</p>
                             <a href="#">Learn more</a>
@@ -284,7 +311,7 @@
                             <a href="https://devlibrary.withgoogle.com/" class="d-block">
                                 <img src="https://developers.google.com/site-assets/images/news/google_dev_library.svg" alt="news img" class="square-3 img-object d-block mx-auto py-4">
                             </a>
-                        <div class="d-flex card-body  flex-column justify-content-between h-100">
+                        <div class="d-flex p-6  flex-column justify-content-between h-100">
                             <h3 class="mb-7"><a href="https://devlibrary.withgoogle.com/">Join the Google Dev Library platform</a></h3>
                             <p class="mb-4">Get started with Google Dev Library to find inspiration on how to use Google technologies. Search for open source projects, learn from other developers, and submit your latest projects so that others can learn from you.
                             </p>
@@ -297,7 +324,7 @@
                             <a href="https://codingcompetitions.withgoogle.com/hashcode/hubs" class="d-block">
                                 <img src="https://developers.google.com/site-assets/images/news/hashcode_480.png" alt="news img" class="square-3 img-object d-block mx-auto py-4">
                             </a>
-                        <div class="d-flex card-body  flex-column justify-content-between h-100">
+                        <div class="d-flex p-6  flex-column justify-content-between h-100">
                             <h3 class="mb-7"><a href="https://codingcompetitions.withgoogle.com/hashcode/hubs">Apply to host a Hash Code Hub</a></h3>
                             <p class="mb-4">Join Hash Code, Google's team programming competition for students and professionals. Bring your community or organization together to solve a real engineering problem. Deadline is February 17.</p>
                             <a href="#">Learn more</a>
@@ -387,30 +414,32 @@
                     <h3 class="fs-7">Connect</h3>
                     <ul>
                         <li class=""><a href="#" class="d-block link-dark link-hover-primary">Blog</a></li>
-                        <li class=""><a href="#" class="d-block link-dark link-hover-primary">Blog</a></li>
-                        <li class=""><a href="#" class="d-block link-dark link-hover-primary">Blog</a></li>
-                        <li class=""><a href="#" class="d-block link-dark link-hover-primary">Blog</a></li>
-                        <li class=""><a href="#" class="d-block link-dark link-hover-primary">Blog</a></li>
+                        <li class=""><a href="#" class="d-block link-dark link-hover-primary">Facebook</a></li>
+                        <li class=""><a href="#" class="d-block link-dark link-hover-primary">Medium</a></li>
+                        <li class=""><a href="#" class="d-block link-dark link-hover-primary">Twitter</a></li>
+                        <li class=""><a href="#" class="d-block link-dark link-hover-primary">YouTube</a></li>
                     </ul>
                 </li>
                 <li class="col-sm-4 mb-3">
-                    <h3 class="fs-7">Connect</h3>
+                    <h3 class="fs-7">Programs</h3>
                     <ul>
-                        <li class=""><a href="#" class="d-block link-dark link-hover-primary">Blog</a></li>
-                        <li class=""><a href="#" class="d-block link-dark link-hover-primary">Blog</a></li>
-                        <li class=""><a href="#" class="d-block link-dark link-hover-primary">Blog</a></li>
-                        <li class=""><a href="#" class="d-block link-dark link-hover-primary">Blog</a></li>
-                        <li class=""><a href="#" class="d-block link-dark link-hover-primary">Blog</a></li>
+                        <li class=""><a href="#" class="d-block link-dark link-hover-primary">Women Techmakers</a></li>
+                        <li class=""><a href="#" class="d-block link-dark link-hover-primary">Google Developer Groups</a></li>
+                        <li class=""><a href="#" class="d-block link-dark link-hover-primary">Google Developers Experts</a></li>
+                        <li class=""><a href="#" class="d-block link-dark link-hover-primary">Accelerators</a></li>
+                        <li class=""><a href="#" class="d-block link-dark link-hover-primary">Google Developer Student Clubs</a></li>
                     </ul>
                 </li>
                 <li class="col-sm-4 mb-3">
-                    <h3 class="fs-7">Connect</h3>
+                    <h3 class="fs-7">Developer consoles</h3>
                     <ul>
-                        <li class=""><a href="#" class="d-block link-dark link-hover-primary">Blog</a></li>
-                        <li class=""><a href="#" class="d-block link-dark link-hover-primary">Blog</a></li>
-                        <li class=""><a href="#" class="d-block link-dark link-hover-primary">Blog</a></li>
-                        <li class=""><a href="#" class="d-block link-dark link-hover-primary">Blog</a></li>
-                        <li class=""><a href="#" class="d-block link-dark link-hover-primary">Blog</a></li>
+                        <li class=""><a href="#" class="d-block link-dark link-hover-primary">Google API Console</a></li>
+                        <li class=""><a href="#" class="d-block link-dark link-hover-primary">Google Cloud Platform Console</a></li>
+                        <li class=""><a href="#" class="d-block link-dark link-hover-primary">Google Play Console</a></li>
+                        <li class=""><a href="#" class="d-block link-dark link-hover-primary">Firebase Console</a></li>
+                        <li class=""><a href="#" class="d-block link-dark link-hover-primary">Actions on Google Console</a></li>
+                        <li class=""><a href="#" class="d-block link-dark link-hover-primary">Cast SDK Developer Console</a></li>
+                        <li class=""><a href="#" class="d-block link-dark link-hover-primary">Chrome Web Store Dashboard</a></li>
                     </ul>
                 </li>
             </ul>
@@ -420,10 +449,10 @@
                 <a href="#" class="d-block"><img src="https://www.gstatic.com/devrel-devsite/prod/v58f8eddac3b6550de59aef35db6a54dd8d6b9bfd5277859b01b659996a6dcf43/developers/images/lockup-developers.svg" alt="img" style="width: 185px; height: 32px;"></a>
                 <ul class="d-flex flex-column flex-sm-row">
                     <li class="ms-sm-7"><a href="#" class="d-block link-dark link-hover-primary">Android</a></li>
-                    <li class="ms-sm-7"><a href="#" class="d-block link-dark link-hover-primary">Android</a></li>
-                    <li class="ms-sm-7"><a href="#" class="d-block link-dark link-hover-primary">Android</a></li>
-                    <li class="ms-sm-7"><a href="#" class="d-block link-dark link-hover-primary">Android</a></li>
-                    <li class="ms-sm-7"><a href="#" class="d-block link-dark link-hover-primary">Android</a></li>
+                    <li class="ms-sm-7"><a href="#" class="d-block link-dark link-hover-primary">Chrome</a></li>
+                    <li class="ms-sm-7"><a href="#" class="d-block link-dark link-hover-primary">Firebase</a></li>
+                    <li class="ms-sm-7"><a href="#" class="d-block link-dark link-hover-primary">Google Cloud Platform</a></li>
+                    <li class="ms-sm-7"><a href="#" class="d-block link-dark link-hover-primary">All products</a></li>
                 </ul>
             </div>
             </div>
@@ -436,7 +465,14 @@
                             <p class="fs-7 me-4">Sign up for the Google Developers newsletter</p>
                             <a href="#" class="btn btn-primary fs-7">Subscribe</a>
                         </div>
-                        <a href="#" class="btn btn-primary d-inline-block fs-7">Toggle</a>
+                        <button type="button" class="d-flex align-items-center btn px-0 pe-2 border toggle-btn">
+                            <span class="material-icons-outlined">
+                                arrow_drop_down
+                            </span>
+                            <p class="fs-7">
+                                English
+                            </p>
+                        </button>
                     </div>
                 </div>
             </div>
