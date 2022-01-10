@@ -26,3 +26,31 @@ calculate(classObj.opErr2);
 avg(productData);
 
 //assignment 4
+
+
+//request 1
+const title = document.querySelector('#js-title');
+let times = 0 ;
+title.addEventListener('click',changeTitleContent);
+
+
+function changeTitleContent(e){
+    if(e.target.nodeName !== 'H3'){
+        console.log('please click on the title content');
+        return 
+    }
+    e.target.textContent = `Have a very${times>1 ? "*" : ""}${times>1 ? times : ""} Good Day!`;
+    times ++
+}
+
+//request 2
+const menuBtn = document.querySelector('.navbar-button');
+const closeMenuBtn = document.querySelector('.mobile-menu-closeBtn');
+menuBtn.addEventListener('click',toggleMenu);
+closeMenuBtn.addEventListener('click', toggleMenu);
+
+function toggleMenu (e){
+    console.log(e.target.closest('button'));
+}
+
+//assignment 5

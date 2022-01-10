@@ -22,7 +22,7 @@
           <h1 class="logo">
             <a href="#" class="logo-link">Website Title/logo</a>
           </h1>
-          <button class="navbar-button">
+          <button type="button" class="navbar-button">
             <span class="material-icons-outlined"> menu </span>
           </button>
           <ul class="navbar-list">
@@ -35,7 +35,21 @@
       </div>
     </nav>
 
-    <header class="header">
+    <div class="mobile-menu js-menu">
+      <div class="mobile-menu-content">
+        <button type="button" class="mobile-menu-closeBtn material-icons-outlined">
+          close
+        </button>
+        <ul class="mobile-menu-list">
+          <li><a href="#">Item 1</a></li>
+          <li><a href="#">Item 2</a></li>
+          <li><a href="#">Item 3</a></li>
+          <li><a href="#">Item 4</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <header class="header" id="js-title">
       <h3>Welcome Message</h3>
     </header>
 
@@ -56,7 +70,35 @@
             <h3 class="content-card-title">Content Box 4</h3>
           </li>
         </ul>
-        <a href="#" class="button">Call To Action</a>
+        <a href="#" class="button" id="js-showBtn">Call To Action</a>
+        <ul class="row" style="display: none;" data-box="1">
+          <li class="col col-sm-6 content-card">
+            <h3 class="content-card-title">Content Box 1</h3>
+          </li>
+          <li class="col col-sm-6 content-card">
+            <h3 class="content-card-title">Content Box 2</h3>
+          </li>
+          <li class="col col-sm-6 content-card">
+            <h3 class="content-card-title">Content Box 3</h3>
+          </li>
+          <li class="col col-sm-6 content-card">
+            <h3 class="content-card-title">Content Box 4</h3>
+          </li>
+        </ul>
+        <ul class="row" style="display: none;" data-box="2">
+          <li class="col col-sm-6 content-card">
+            <h3 class="content-card-title">Content Box 1</h3>
+          </li>
+          <li class="col col-sm-6 content-card">
+            <h3 class="content-card-title">Content Box 2</h3>
+          </li>
+          <li class="col col-sm-6 content-card">
+            <h3 class="content-card-title">Content Box 3</h3>
+          </li>
+          <li class="col col-sm-6 content-card">
+            <h3 class="content-card-title">Content Box 4</h3>
+          </li>
+        </ul>
     </div>
     </main>
     <script type="module" src="./js/all.js"></script>
