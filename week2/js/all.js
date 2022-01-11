@@ -103,20 +103,33 @@ function showMoreContent (e) {
 }
 
 //assignment 5
-/* Batch #15 / Front-End Class
-Remote Learning Assignment - Week 2
-Assignment 5: Algorithm Practice (Advanced Optional)
-Given an array of integers, return indices of the two numbers such that they add up to a
-specific target. You may assume that each input would have exactly one solution, and you
-may not use the same element twice.
+
 function twoSum(nums, target){
-// your code here
+    let numAry = [...nums];
+    let numLen = numAry.length;
+    const sum = target;
+    let compareLen =  ((1 + (numLen-1)) * (numLen-1)) / 2;
+    let noCompares = 0;
+
+    let ansAry = [];
+    
+    for(let i = 0; i < numLen; i++){
+        for (let a = i+1 ; a < numLen; a++){
+            if(numAry[i]+numAry[a] === sum ) {
+                ansAry.push(i,a);
+                console.log(numAry[i]+'+'+numAry[a]+"="+sum,ansAry);
+                break;
+            } else {
+                noCompares ++ ;
+                if(noCompares === compareLen){
+                    console.log(`找不到符合兩數相加等於${sum}的數字`);
+                }
+            }
+        }
+    }
 }
-/*
-For example:
+
 twoSum([2, 7, 11, 15], 9);
-Should returns:
-[0, 1]
-Because:
-nums[0]+nums[1] is 9
-* */
+twoSum([21, 32, 1, 15, 23, 2, 12], 25);
+twoSum([21, 32, 1, 15, 23, 2], 6);
+
