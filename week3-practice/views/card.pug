@@ -7,7 +7,7 @@ block info
             div.card-box.card-subtitle
                 i.fas.fa-exclamation-circle 
                 span= hint 
-    div.card-content 
+    div.card-content.card-flex 
         if (otherSideToShow === 'answer')
             a(href=`/cards/${id}?side=${otherSideToShow}`).card-btn.card-box
                 i.far.fa-check-circle
