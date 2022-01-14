@@ -1,0 +1,152 @@
+/* variables */
+:root {
+    --primary-color: #22577E;
+    --secondary-color: #5584AC;
+    --info-color: #95D1CC;
+    --warning-color: #F6F2D4;
+}  
+/* basic setting */
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+main {
+    flex-grow: 1;
+    margin: 0 auto;
+}
+pre {
+    white-space: pre-wrap;
+}
+/* layout.pug */
+.layout {
+    padding: .75rem 0;
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+.layout h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+}
+.layout p {
+    font-weight: 500;
+    text-align: center;
+}
+
+.container {
+    padding: 3rem 1rem;
+    max-width: 1200px;
+}
+
+/* app.pug */
+.card {
+    width: 300px;
+
+    border-radius: 12px;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 1rem;
+    margin: auto;
+}
+.card-btn {
+    display: block;
+    border-radius: 12px;
+    padding: .5rem 1rem;
+    background-color: var(--warning-color);
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.card-btn:hover {
+    background-color: var(--primary-color);
+    color: var(--warning-color);
+}
+.card-box {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.card-box i{
+    font-size: 1.5rem;
+}
+
+
+.card-title{
+    margin-top: 0;
+    text-align: center;
+}
+.card-subtitle {
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+    justify-content: end;
+}
+.card-subtitle i{
+    font-size: 0.875rem;
+}
+
+.card-content{
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.menu-list{
+    list-style: none;
+    padding-left: 0;
+
+}
+
+.menu-list li {
+    margin-bottom: 1rem;
+}
+.input-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-form label{
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.input-form input{
+    border: 0;
+    border-radius: 12px;
+    padding: 0.5rem 1rem;
+    flex-grow: 1;
+
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+.input-btn {
+    border: 0px solid #000;
+    cursor: pointer;
+    border-radius: 12px;
+    padding: .5rem 1rem;
+    background-color: var(--primary-color);
+    color: var(--warning-color);
+}
+
+.input-btn:hover {
+    color: var(--primary-color);
+    background-color: var(--warning-color);
+}
+
+.clear-btn {
+    border: 0px solid #000;
+    border-radius: 12px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 0.875rem;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+}

@@ -1,0 +1,20 @@
+extends app.pug 
+
+block info
+    div.card-header
+        h2.card-title=text
+        if hint 
+            div.card-box.card-subtitle
+                i.fas.fa-exclamation-circle 
+                span= hint 
+    div.card-content 
+        if (otherSideToShow === 'answer')
+            a(href=`/cards/${id}?side=${otherSideToShow}`).card-btn.card-box
+                i.far.fa-check-circle
+                span= displayBtn
+        else 
+            a(href=`/cards/${id}?side=${otherSideToShow}`).card-btn.card-box
+                i.far.fa-question-circle
+                span= displayBtn
+        br
+        a(href=`/cards`).card-btn Next Card
