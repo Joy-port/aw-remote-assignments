@@ -17,8 +17,7 @@ export const productData = {
 };
 
 export function avg(data){
-    const priceAry = Object.values(data)[1]
-                    .map(product => product.price);
+    const priceAry = productData.products.map(product => product.price);
     const priceAvg = (priceAry.reduce((a,b) => a + b)) / priceAry.length;
 
     console.log("assignment 3", priceAvg);

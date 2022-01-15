@@ -6,8 +6,8 @@ import { productData, avg } from './avg.js';
 
 //assignment 1 Array
 
-max([1, 2, 4, 5]); // result to 5
-max([5, 2, 7, 1, 6]); // result to 7
+max([1, 2, 4, 5]);
+max([5, 2, 7, 1, 6]);
 
 //assignment 2 Obj
 
@@ -25,14 +25,11 @@ calculate(classObj.opErr2);
 //assignment 3
 avg(productData);
 
-
-
 //assignment 4
 //request 1
 const title = document.querySelector('#js-title');
 let times = 0 ;
 title.addEventListener('click',changeTitleContent);
-
 
 function changeTitleContent(e){
     if(e.target.nodeName !== 'H3'){
@@ -68,7 +65,7 @@ function showMenu(status){
         setTimeout(function() {
             menuCanvas.classList.add('mobile-menu-showUp');
             menuContent.classList.add('mobile-menu-slideIn');
-          }, 100);
+        }, 100);
         
     } else {
         menuContent.classList.remove('mobile-menu-slideIn');
@@ -86,7 +83,7 @@ boxBtn.addEventListener('click', showMoreContent);
 function showMoreContent (e) {
     e.preventDefault();
     if(e.target.nodeName !== "A"){
-       return;
+        return;
     };
     clickNum ++ ;
     if(boxContent[clickNum-1]){
