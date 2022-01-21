@@ -1,0 +1,15 @@
+extends layout.pug 
+
+block content 
+    if name
+        h1 Hello Welcome to #{name}'s World
+        form(action='/' method='post')
+            button(type='submit') username
+    else 
+        h1 Welcome to Node JS & AJAX world~  
+        p please click here to get your Name 
+            form(action='/myName' method='post')
+                button(type='submit') username
+        p or click here to learn some math
+            form(action='/sum.html' method='post')
+                button(type='submit') calculate
