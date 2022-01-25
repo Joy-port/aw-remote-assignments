@@ -32,44 +32,44 @@
         let number = 0;
 
         function init() {
-        showResult();
-        btn.addEventListener("click", function (e) {
-            e.preventDefault();
-            if (!input.value) return console.log(input.value);
-            number = Number(input.value);
-            sendRequest();
             showResult();
-        });
+            btn.addEventListener("click", function (e) {
+                e.preventDefault();
+                if (!input.value) return console.log(input.value);
+                number = Number(input.value);
+                sendRequest();
+                showResult();
+            });
         }
 
         function sendRequest() {
-        xhr.onreadystatechange = alertMessages;
-        xhr.open("GET", `/getData?number=${number}`, true);
-        // xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-        xhr.onload = function () {
-            // console.log(xhr.responseText);
-            content.textContent = number;
-            result.innerHTML = xhr.responseText.split("<body>");
-        };
-        xhr.send();
+            xhr.onreadystatechange = alertMessages;
+            xhr.open("GET", `/getData?number=${number}`, true);
+            // xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+            xhr.onload = function () {
+                // console.log(xhr.responseText);
+                content.textContent = number;
+                result.innerHTML = xhr.responseText.split("<body>");
+            };
+            xhr.send();
         }
 
         function alertMessages() {
-        if (xhr.readyState === 4) {
-            if (xhr.status === 200) {
-            console.log(xhr.statusText, xhr.responseText);
-            } else {
-            console.log(xhr.status, xhr.statusText);
+            if (xhr.readyState === 4) {
+                if (xhr.status === 200) {
+                console.log(xhr.statusText, xhr.responseText);
+                } else {
+                console.log(xhr.status, xhr.statusText);
+                }
             }
-        }
         }
 
         function showResult() {
-        if (!number) {
-            paragraph.style.display = "none";
-        } else {
-            paragraph.style.display = "block";
-        }
+            if (!number) {
+                paragraph.style.display = "none";
+            } else {
+                paragraph.style.display = "block";
+            }
         }
 
         init();
