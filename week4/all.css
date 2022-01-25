@@ -1,0 +1,17 @@
+.container{
+    max-width: 1200px;
+    padding: 2rem 1rem;
+    list-style: none;
+}
+
+.list{
+    background-color: lightblue;
+    color: darkblue;
+    margin-bottom: 2rem;
+    padding: 1rem 2rem;
+    border-radius: 12px;
+}
+
+p{
+    margin-top: 0;
+}

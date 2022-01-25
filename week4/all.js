@@ -4,26 +4,47 @@ function delayedResult(n1, n2, delayTime, callback){
     const result = n1 + n2;
     return setTimeout( callback(result), delayTime )
 }
-// delayedResult(4, 5, 3000, function(result){
-//     console.log(result);
-// }); 
-// delayedResult(-5, 10, 2000, function(result){
-//     window.alert(result);
-// });
+
+delayedResult(4, 5, 3000, function(result){
+    console.log(result);
+}); 
+
+delayedResult(-5, 10, 2000, function(result){
+    window.alert(result);
+});
 
 //assignment 2
 let data = [] ;
-const cors = 'https://cors-anywhere.herokuapp.com/';
-const url ='https://appworks-school.github.io/Remote-Aassigiment-Data/products';
-function ajax(src){
 
-}
-
-function render(data){
-// your code here.
-// document.createElement() and appendChild() are preferred. No innerHTML or // something alike
-
+function ajax (src, callback) {
+    axios.get(src)
+        .then((res) =>{
+            data = res.data ; 
+            callback(data)
+        })
+        .catch((err) =>{
+            console.error(err)
+        })
 } 
 
-    
- // you should get product information in JSON format and render data in the page
+
+function render(data){
+    const app = document.querySelector('.app');
+    const container = document.createElement('ul');
+    container.classList.add('container');
+
+    data.forEach(product => {
+        const list = document.createElement('li');
+        const content = document.createElement('p');
+        const price = document.createElement('span');
+        list.classList.add('list');
+        content.textContent = `${product.name} 是${product.description}`
+        price.textContent = `NT $${product.price}`
+        list.appendChild(content)
+        list.appendChild(price)
+        container.appendChild(list);
+    });
+    app.appendChild(container);
+} 
+
+ajax( "https://appworks-school.github.io/Remote-Aassigiment-Data/products", function(response){render(response); })
