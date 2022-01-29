@@ -1,0 +1,27 @@
+.container {
+  max-width: 1200px;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  margin: auto;
+  @include tablet {
+    padding: 0 2rem;
+  }
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.col {
+  flex-grow: 1;
+  flex-basis: 500px;
+  margin-bottom: 1rem;
+}
+@for $i from 1 through 12 {
+  .col-sm-#{$i} {
+    @include mobile {
+      flex-grow: 0;
+      flex-basis: calc(-40px + 100% *#{$i}* 1 / 12);
+    }
+  }
+}
