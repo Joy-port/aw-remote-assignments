@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/aw-remote-assignments/static/css/main.409034bb.css",
+    "main.js": "/aw-remote-assignments/static/js/main.b86400f5.js",
+    "index.html": "/aw-remote-assignments/index.html",
+    "main.409034bb.css.map": "/aw-remote-assignments/static/css/main.409034bb.css.map",
+    "main.b86400f5.js.map": "/aw-remote-assignments/static/js/main.b86400f5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.409034bb.css",
+    "static/js/main.b86400f5.js"
+  ]
+}
