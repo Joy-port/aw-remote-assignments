@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/aw-remote-assignments/static/css/main.409034bb.css",
-    "main.js": "/aw-remote-assignments/static/js/main.b86400f5.js",
+    "main.js": "/aw-remote-assignments/static/js/main.fcfce28f.js",
     "index.html": "/aw-remote-assignments/index.html",
     "main.409034bb.css.map": "/aw-remote-assignments/static/css/main.409034bb.css.map",
-    "main.b86400f5.js.map": "/aw-remote-assignments/static/js/main.b86400f5.js.map"
+    "main.fcfce28f.js.map": "/aw-remote-assignments/static/js/main.fcfce28f.js.map"
   },
   "entrypoints": [
     "static/css/main.409034bb.css",
-    "static/js/main.b86400f5.js"
+    "static/js/main.fcfce28f.js"
   ]
 }
