@@ -11,15 +11,24 @@ function Navbar() {
 
     return (
         <>
-            <IconContext.Provider value={{color: 'darkblue'}}>
-                <div className="navbar">
-                    <Link to="#" className='navbar-list'>
-                        <FaIcons.FaBars onClick={showSidebar}/>
-                    </Link>
-                </div>
-
-                    <div>
-                        <div className={sidebar ? "mobile-menu-backdrop" : ''}></div>
+            <Link to="#" className='navbar-button'>
+                <FaIcons.FaBars onClick={showSidebar}/>
+            </Link>
+            <ul className="navbar-list">
+                { SidebarData.map((item, index) => {
+                    return (
+                        <li key={index} className={item.cName}>
+                            <Link to={item.path}>
+                                {item.icon}
+                                <span className="ml-1">{item.title}</span>
+                            </Link>
+                        </li>
+                    )
+                })}
+            </ul>
+            <div>
+                <IconContext.Provider value={{color: 'darkblue'}}>
+                    <div className={sidebar ? "mobile-menu-backdrop" : ''}></div>
                         <nav className={sidebar ? 'mobile-menu-content mobile-menu-slideIn' : 'mobile-menu-content'}>
                             <ul className="mobile-menu-list" onClick={showSidebar}>
                                 <li>
@@ -34,15 +43,15 @@ function Navbar() {
                                         <li key={index} className={item.cName}>
                                             <Link to={item.path}>
                                                 {item.icon}
-                                                <span>{item.title}</span>
+                                                <span className="ml-2">{item.title}</span>
                                             </Link>
                                         </li>
                                     )
                                 })}
                             </ul>
                         </nav>
-                    </div>
-            </IconContext.Provider>
+                </IconContext.Provider>
+            </div>
         </>
     )
 }

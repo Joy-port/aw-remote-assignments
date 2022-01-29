@@ -3,8 +3,8 @@
 
   &-content {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
 
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -13,6 +13,7 @@
   &-button {
     border: 0;
     background-color: transparent;
+    margin-left: auto;
     cursor: pointer;
     @include tablet {
       display: none;
@@ -21,6 +22,7 @@
 
   &-list {
     display: none;
+    margin-left: auto;
 
     & > li + li {
       margin-top: 1rem;
@@ -105,4 +107,11 @@
 
 .d-none {
   display: none;
+}
+
+.ml-1{
+  margin-left: .5rem;
+}
+.ml-2{
+  margin-left: 1rem;
 }
