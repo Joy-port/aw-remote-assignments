@@ -30,12 +30,12 @@ const Header = props => {
                 </nav>
                 <header className="header">
                     <Routes>
-                        <Route path="/" exact element={<Home/>}></Route>
-                        <Route path="/reports"  element={<Reports/>}></Route>
-                        <Route path="/products"  element={<Products/>}></Route>
-                        <Route path="/team"  element={<Team/>}></Route>
-                        <Route path="/messages"  element={<Messages/>}></Route>
-                        <Route path="/support"  element={<Support/>}></Route>
+                        <Route path="/aw-remote-assignments" exact element={<Home/>}></Route>
+                        <Route path="/aw-remote-assignments/reports"  element={<Reports/>}></Route>
+                        <Route path="/aw-remote-assignments/products"  element={<Products/>}></Route>
+                        <Route path="/aw-remote-assignments/team"  element={<Team/>}></Route>
+                        <Route path="/aw-remote-assignments/messages"  element={<Messages/>}></Route>
+                        <Route path="/aw-remote-assignments/support"  element={<Support/>}></Route>
                     </Routes>
                 </header>
             </Router>
